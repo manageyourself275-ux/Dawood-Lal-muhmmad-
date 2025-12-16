@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: white;
+}
+
+.hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero img {
+    width: 180px;
+    border-radius: 50%;
+    box-shadow: 0 0 30px cyan;
+    animation: float 4s ease-in-out infinite;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-top: 20px;
+}
+
+.hero h2 {
+    color: cyan;
+    margin: 10px 0;
+}
+
+.hero p {
+    max-width: 600px;
+    margin: auto;
+}
+
+.buttons a {
+    display: inline-block;
+    margin: 15px;
+    padding: 12px 30px;
+    border-radius: 30px;
+    background: linear-gradient(45deg, cyan, magenta);
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.3s;
+}
+
+.buttons a:hover {
+    transform: scale(1.1);
+}
+
+section {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: cyan;
+}
+
+#qualification ul {
+    list-style: none;
+}
+
+#qualification li {
+    margin: 10px 0;
+    font-size: 1.1rem;
+}
+
+.skills-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skills-box span {
+    background: rgba(255,255,255,0.1);
+    margin: 10px;
+    padding: 15px 25px;
+    border-radius: 20px;
+    box-shadow: 0 0 15px magenta;
+}
+
+.social-links a {
+    display: inline-block;
+    margin: 10px;
+    padding: 12px 25px;
+    background: linear-gradient(45deg, magenta, cyan);
+    color: black;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: black;
+}
+
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+    100% { transform: translateY(0); }
+}
